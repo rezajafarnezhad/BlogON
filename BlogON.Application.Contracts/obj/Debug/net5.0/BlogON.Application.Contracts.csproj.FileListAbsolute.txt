@@ -1,0 +1,12 @@
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\bin\Debug\net5.0\BlogON.Application.Contracts.deps.json
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\bin\Debug\net5.0\BlogON.Application.Contracts.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\bin\Debug\net5.0\ref\BlogON.Application.Contracts.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\bin\Debug\net5.0\BlogON.Application.Contracts.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.csprojAssemblyReference.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.AssemblyInfoInputs.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.AssemblyInfo.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\ref\BlogON.Application.Contracts.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Application.Contracts\obj\Debug\net5.0\BlogON.Application.Contracts.pdb

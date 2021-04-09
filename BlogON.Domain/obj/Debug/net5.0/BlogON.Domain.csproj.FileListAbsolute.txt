@@ -1,0 +1,12 @@
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\bin\Debug\net5.0\BlogON.Domain.deps.json
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\bin\Debug\net5.0\BlogON.Domain.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\bin\Debug\net5.0\ref\BlogON.Domain.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\bin\Debug\net5.0\BlogON.Domain.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.csprojAssemblyReference.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.AssemblyInfoInputs.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.AssemblyInfo.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\ref\BlogON.Domain.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.pdb

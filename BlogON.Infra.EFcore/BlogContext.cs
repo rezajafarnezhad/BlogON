@@ -1,4 +1,5 @@
-﻿using BlogON.Domain.Entities.ArticleCategory;
+﻿using BlogON.Domain.Entities.Article;
+using BlogON.Domain.Entities.ArticleCategory;
 using BlogON.Infra.EFcore.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -17,6 +18,7 @@ namespace BlogON.Infra.EFcore
         }
 
         public DbSet<ArticleCategory> ArticleCategories { get; set; }
+        public DbSet<Article> Articles { get; set; }
 
 
 
@@ -24,6 +26,7 @@ namespace BlogON.Infra.EFcore
         {
 
             modelBuilder.ApplyConfiguration(new ArticleCaregoryMapping());
+            modelBuilder.ApplyConfiguration(new ArticleMapping());
 
             base.OnModelCreating(modelBuilder);
         }

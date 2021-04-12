@@ -32,5 +32,18 @@ namespace BlogON.Domain.Entities.Article
             IsDelete = false;
             CreationDate = DateTime.Now;
         }
+        public void Edit(string title, string shortDescription, string image, string content, int articleCategoryId)
+        {
+            Title = title;
+            ShortDescription = shortDescription;
+            Image = image;
+            Content = content;
+            ArticleCategoryId = articleCategoryId;
+           
+        }
+        public Article()
+        {
+
+        }
     }
 }

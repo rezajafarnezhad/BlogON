@@ -17,8 +17,6 @@ namespace BlogON.Presentation.Areas.Admin.Pages.Article
         private readonly IArticleCategoryApplication _articleCategoryApplication;
         private readonly IArticleApplication _articleApplication;
 
-      
-
         public CreateModel(IArticleCategoryApplication articleCategoryApplication, IArticleApplication articleApplication)
         {
             _articleCategoryApplication = articleCategoryApplication;

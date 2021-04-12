@@ -23,7 +23,7 @@ namespace BlogON.Infra.Core
             services.AddDbContext<BlogContext>(options => options.UseSqlServer(ConnectionString));
 
             #endregion
-
+            
             #region Article
 
             services.AddTransient<IArticleRepo,ArticleRepo>();
@@ -31,6 +31,9 @@ namespace BlogON.Infra.Core
 
             #endregion
 
+
+
+            
             #region ArticleCategory
             services.AddTransient<IArticleCategoryRepo, ArticleCategoryRepo>();
             services.AddTransient<IArticleCategoryApplication, ArticleCategoryApplication>();

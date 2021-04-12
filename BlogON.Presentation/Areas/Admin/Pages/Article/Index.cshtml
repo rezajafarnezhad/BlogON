@@ -18,7 +18,7 @@
         لیست  مطالب
     </div>
     <div class="panel-heading pull-left">
-        <a href="#" onclick="MyCreate()" class="btn btn-success">افزودن مطلب جدید</a>
+        <a href="/Admin/Article/Create/" class="btn btn-success">افزودن مطلب جدید</a>
     </div>
     <!-- /.panel-heading -->
     <div class="panel-body">
@@ -55,7 +55,7 @@
                             </td>
                             <td>@item.CreationDate</td>
                             <td>
-                                <button href="#" onclick="MyEdit(@item.Id)" class="btn btn-sm btn-warning pull-right"><i class="fa fa-edit"></i></button>
+                                <a href="/Admin/Article/Edit/@item.Id" class="btn btn-sm btn-warning pull-right"><i class="fa fa-edit"></i></a>
                                 @if (item.IsDelete)
                                 {
                                     <form method="post" asp-page-handler="Active" class="pull-left">
@@ -81,68 +81,4 @@
     </div>
     <!-- /.panel-body -->
 </div>
-
-
-
-<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog">
-
-    <div class="modal-dialog modal-lg" role="document">
-
-        <div class="modal-content">
-
-            <div class="modal-header bg-dark">
-                <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div id="bodyModal" class="modal-body">
-
-
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-@section SC{
-
-
-
-    <script>
-        function MyCreate() {
-            $.ajax({
-                url: "/Admin/Article/Create/",
-                type: "Get",
-                data: {}
-            }).done(function (result) {
-                $('#myModal').modal('show');
-                $('#bodyModal').html(result);
-            });
-        }
-    </script>
-
-
-    <script>
-        function MyEdit(id) {
-            $.ajax({
-                url: "/Admin/ArticleCategory/Edit/" + id,
-                type: "Get",
-                data: {}
-            }).done(function (result) {
-                $('#myModal').modal('show');
-                $('#bodyModal').html(result);
-            });
-        }
-    </script>
-
-
-
-
-}
-
 

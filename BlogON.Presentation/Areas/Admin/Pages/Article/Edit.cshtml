@@ -1,4 +1,62 @@
-﻿@page
+﻿@page "{id}"
 @model BlogON.Presentation.Areas.Admin.Pages.Article.EditModel
 @{
+    Layout = "_AdminLayout";
+
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header center-block">ویرایش مطلب @Model.EditArticle.Title</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <form method="post">
+        <div class="form-group">
+            <input asp-for="EditArticle.Id" type="hidden" />
+            <input asp-for="EditArticle.Title"  class="form-control" placeholder="عنوان مطلب را وارد کنید" />
+        </div>
+        <div class="form-group">
+            <label>انتخاب دسته</label>
+            <select asp-for="EditArticle.ArticleCategoryId"  id="ArticleCategoryId" asp-items="Model.selectListItems" class="form-control">
+                <option value="0">
+                    انتخاب دسته
+                </option>
+            </select>
+        </div>
+        <div class="form-group">
+            <textarea asp-for="EditArticle.ShortDescription" rows="5"  class="form-control" placeholder="چکیده را وارد کنید"></textarea>
+        </div>
+        <div class="form-group">
+            <input asp-for="EditArticle.Image" type="text"  class="form-control" placeholder="تصویر را وارد کنید" />
+        </div>
+        <div class="form-group">
+            <textarea asp-for="EditArticle.Content" id="Content"  class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="ثبت شود" class="btn btn-warning btn-block" />
+        </div>
+    </form>
+
+</div>
+
+
+@section SC{
+
+    <script src="~/AdminPanel/js/jquery-1.10.2.js"></script>
+
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <script src="~/ckeditor/adapters/jquery.js"></script>
+
+    <script>
+        $(function () {
+            $('#Content').ckeditor();
+        });
+    </script>
+
+
 }

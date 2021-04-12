@@ -22,6 +22,13 @@ namespace BlogON.Infra.EFcore.Repository
             _context.Add(article);
         }
 
+      
+
+        public Article GetArticleById(int id)
+        {
+            return _context.Articles.Find(id);
+        }
+
         public List<Article> GetArticles()
         {
             return _context.Articles.Include(c=>c.ArticleCategory).ToList();

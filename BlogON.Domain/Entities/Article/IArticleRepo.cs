@@ -10,6 +10,7 @@ namespace BlogON.Domain.Entities.Article
     {
         List<Article> GetArticles();
         void Create(Article article);
+        Article GetArticleById(int id);
         void Save();
     }
 }

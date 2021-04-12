@@ -26,6 +26,14 @@ namespace BlogON.Application
 
         }
 
+        public void Edit(EditArticle Edit)
+        {
+            var Article = _articleRepo.GetArticleById(Edit.Id);
+            Article.Edit(Edit.Title,Edit.ShortDescription,Edit.Image,Edit.Content,Edit.ArticleCategoryId);
+            _articleRepo.Save();
+             
+        }
+
         public List<ArticleViewModel> GetArticles()
         {
             var article = _articleRepo.GetArticles();
@@ -45,6 +53,20 @@ namespace BlogON.Application
             }
 
             return result;
+        }
+
+        public EditArticle GetById(int id)
+        {
+            var result = _articleRepo.GetArticleById(id);
+            return new EditArticle()
+            {
+               Id=result.Id,
+               ShortDescription=result.ShortDescription,
+               ArticleCategoryId=result.ArticleCategoryId,
+               Content=result.Content,
+               Image=result.Image,
+               Title=result.Title
+            };
         }
     }
 }

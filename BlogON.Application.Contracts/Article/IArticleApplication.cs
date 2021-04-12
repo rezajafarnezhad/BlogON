@@ -10,5 +10,7 @@ namespace BlogON.Application.Contracts.Article
     {
         List<ArticleViewModel> GetArticles();
         void Create(CreateArticle create);
+        void Edit(EditArticle Edit);
+        EditArticle GetById(int id);
     }
 }

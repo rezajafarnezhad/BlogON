@@ -44,13 +44,13 @@ namespace BlogON.Infra.EFcore.Migrations
 
                     b.Property<string>("ShortDescription")
                         .IsRequired()
-                        .HasMaxLength(190)
-                        .HasColumnType("nvarchar(190)");
+                        .HasMaxLength(600)
+                        .HasColumnType("nvarchar(600)");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)");
+                        .HasMaxLength(170)
+                        .HasColumnType("nvarchar(170)");
 
                     b.HasKey("Id");
 

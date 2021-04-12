@@ -400,3 +400,4 @@ C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\BlogON.P
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\bin\Debug\net5.0\Humanizer.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Article\Index.cshtml.g.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Article\Create.cshtml.g.cs

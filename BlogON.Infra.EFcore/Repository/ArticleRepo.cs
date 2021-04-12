@@ -17,9 +17,19 @@ namespace BlogON.Infra.EFcore.Repository
             _context = context;
         }
 
+        public void Create(Article article)
+        {
+            _context.Add(article);
+        }
+
         public List<Article> GetArticles()
         {
             return _context.Articles.Include(c=>c.ArticleCategory).ToList();
+        }
+
+        public void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }

@@ -18,6 +18,14 @@ namespace BlogON.Application
             _articleRepo = articleRepo;
         }
 
+        public void Create(CreateArticle create)
+        {
+            var Article = new Article(create.Title,create.ShortDescription,create.Image,create.Content,create.ArticleCategoryId);
+            _articleRepo.Create(Article);
+            _articleRepo.Save();
+
+        }
+
         public List<ArticleViewModel> GetArticles()
         {
             var article = _articleRepo.GetArticles();

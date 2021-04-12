@@ -1,0 +1,54 @@
+﻿@page
+@model BlogON.Presentation.Areas.Admin.Pages.Article.CreateModel
+@{
+    Layout = null;
+}
+
+
+<h3 class="text-center">ثبت مطلب جدید</h3>
+<hr />
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 ">
+
+        <form asp-page="Create">
+            <div class="form-group">
+                <input name="Title" class="form-control" placeholder="عنوان مطلب را وارد کنید" />
+               
+            </div>
+            <div class="form-group">
+                <label class="control-label">انتخاب دسته</label>
+                <select name="ArticleCategoryId" id="ArticleCategoryId" asp-items="Model.selectListItems" class="form-control" >
+                    <option value="0">
+                        انتخاب دسته
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" name="ShortDescription" class="form-control" placeholder="چکیده را وارد کنید" />
+            >
+            </div>
+            <div class="form-group">
+                <input name="Image" class="form-control" placeholder="تصویر را وارد کنید" />
+                
+            </div>
+            <div class="form-group">
+                <textarea id="Content" name="Content" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="ثبت شود" class="btn btn-success btn-block" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="~/AdminPanel/js/jquery-1.10.2.js"></script>
+<script src="~/ckeditor/ckeditor.js"></script>
+<script src="~/ckeditor/adapters/jquery.js"></script>
+
+<script>
+    $(function () {
+        $('#Content').ckeditor();
+    });
+</script>

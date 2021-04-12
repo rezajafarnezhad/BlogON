@@ -15,8 +15,8 @@ namespace BlogON.Infra.EFcore.Mapping
         {
             builder.ToTable("Articles");
             builder.HasKey(c => c.Id);
-            builder.Property(c=>c.ShortDescription).HasMaxLength(190).IsRequired();
-            builder.Property(c=>c.Title).HasMaxLength(120).IsRequired();
+            builder.Property(c=>c.ShortDescription).HasMaxLength(600).IsRequired();
+            builder.Property(c=>c.Title).HasMaxLength(170).IsRequired();
             builder.Property(c=>c.Content).IsRequired();
             builder.Property(c=>c.CreationDate).IsRequired();
             builder.Property(c=>c.IsDelete).IsRequired();

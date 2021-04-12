@@ -84,9 +84,9 @@
 
 
 
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog">
 
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
 
         <div class="modal-content">
 
@@ -105,19 +105,18 @@
         </div>
 
     </div>
-
 </div>
+
 
 
 @section SC{
 
-    <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet" />
-    <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
 
     <script>
         function MyCreate() {
             $.ajax({
-                url: "/Admin/ArticleCategory/Create/",
+                url: "/Admin/Article/Create/",
                 type: "Get",
                 data: {}
             }).done(function (result) {

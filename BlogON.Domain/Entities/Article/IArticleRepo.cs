@@ -8,6 +8,6 @@ namespace BlogON.Domain.Entities.Article
 {
     public interface IArticleRepo
     {
-        
+        List<Article> GetArticles();
     }
 }

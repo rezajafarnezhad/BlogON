@@ -8,6 +8,6 @@ namespace BlogON.Application.Contracts.Article
 {
     public interface IArticleApplication
     {
-
+        List<ArticleViewModel> GetArticles();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using BlogON.Domain.Entities.Article;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,11 @@ namespace BlogON.Infra.EFcore.Repository
         public ArticleRepo(BlogContext context)
         {
             _context = context;
+        }
+
+        public List<Article> GetArticles()
+        {
+            return _context.Articles.Include(c=>c.ArticleCategory).ToList();
         }
     }
 }

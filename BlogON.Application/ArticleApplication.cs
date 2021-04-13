@@ -18,6 +18,13 @@ namespace BlogON.Application
             _articleRepo = articleRepo;
         }
 
+        public void Active(int id)
+        {
+            var article = _articleRepo.GetArticleById(id);
+            article.Activate();
+            _articleRepo.Save();
+        }
+
         public void Create(CreateArticle create)
         {
             var Article = new Article(create.Title,create.ShortDescription,create.Image,create.Content,create.ArticleCategoryId);
@@ -67,6 +74,13 @@ namespace BlogON.Application
                Image=result.Image,
                Title=result.Title
             };
+        }
+
+        public void Remove(int id)
+        {
+            var article = _articleRepo.GetArticleById(id);
+            article.Remove();
+            _articleRepo.Save();
         }
     }
 }

@@ -26,5 +26,18 @@ namespace BlogON.Presentation.Areas.Admin.Pages.Article
         {
             articleViewModel = _articleApplication.GetArticles();
         }
+
+
+        public IActionResult OnPostRemove(int id)
+        {
+            _articleApplication.Remove(id);
+            return RedirectToPage("Index");
+        }
+
+        public IActionResult OnPostActive(int id)
+        {
+            _articleApplication.Active(id);
+            return RedirectToPage("Index");
+        }
     }
 }

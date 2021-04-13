@@ -12,5 +12,7 @@ namespace BlogON.Application.Contracts.Article
         void Create(CreateArticle create);
         void Edit(EditArticle Edit);
         EditArticle GetById(int id);
+        void Remove(int id);
+        void Active(int id);
     }
 }

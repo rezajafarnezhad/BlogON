@@ -41,6 +41,16 @@ namespace BlogON.Domain.Entities.Article
             ArticleCategoryId = articleCategoryId;
            
         }
+
+        public void Remove()
+        {
+            IsDelete = true;
+        }
+        public void Activate()
+        {
+            IsDelete = false;
+        }
+             
         public Article()
         {
 

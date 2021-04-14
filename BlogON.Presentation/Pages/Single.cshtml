@@ -1,0 +1,55 @@
+﻿@page "{id}"
+@model BlogON.Presentation.Pages.SingleModel
+@{
+    Layout = "_Layout";
+}
+
+<div class="single_post">
+    <div class="container-fluid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="post_img">
+                        <img src="@Model.articleQueryView.Image" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="posts_meta text-center">
+                <span><i class="fa fa-comment-o"></i> 25 نظر</span>
+                <span><i class="fa fa-archive"></i>@Model.articleQueryView.Category</span>
+                <span><i class="fa fa-calendar"></i> @Model.articleQueryView.CreationDate.ToString()</span>
+            </div>
+            <div class="post_content">
+                <h3 class="Bold">@Model.articleQueryView.Title</h3>
+                <hr />
+
+                @Html.Raw(Model.articleQueryView.Content)
+
+            </div>
+            <div class="comments_form">
+                <h5>دیدگاه شما </h5>
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="نام شما">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="ایمیل">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" placeholder="نظر شما ..."></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-left">
+                                <button class="btn btn-primary">ثبت نظر</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

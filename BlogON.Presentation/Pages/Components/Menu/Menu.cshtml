@@ -1,0 +1,13 @@
+﻿
+@model IEnumerable<BlogON.infra.Query.ArticleCategory>
+
+<div class="main-menu">
+    <ul>
+        <li><a href="/">اتاق خبر</a></li>
+        @foreach (var item in Model)
+        {
+            <li><a asp-page="/Archive" asp-route-id="@item.Id">@item.Title</a></li>
+        }
+        
+    </ul>
+</div>

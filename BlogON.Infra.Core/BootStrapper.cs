@@ -5,6 +5,7 @@ using BlogON.Application.Contracts.Article;
 using BlogON.Application.Contracts.ArticleCategory;
 using BlogON.Domain.Entities.Article;
 using BlogON.Domain.Entities.ArticleCategory;
+using BlogON.infra.Query;
 using BlogON.Infra.EFcore;
 using BlogON.Infra.EFcore.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,13 @@ namespace BlogON.Infra.Core
             #region ArticleCategory
             services.AddTransient<IArticleCategoryRepo, ArticleCategoryRepo>();
             services.AddTransient<IArticleCategoryApplication, ArticleCategoryApplication>();
+
+            #endregion
+
+            #region Query
+
+            services.AddTransient<IArticleQuery, ArticleQuery>();
+            services.AddTransient<IArticleCategoryQueryView, ArticleCategoryQueryView>();
 
             #endregion
 

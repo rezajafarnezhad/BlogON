@@ -12,6 +12,7 @@
     <ProjectReference Include="..\BlogON.Application\BlogON.Application.csproj" />
     <ProjectReference Include="..\BlogON.Domain\BlogON.Domain.csproj" />
     <ProjectReference Include="..\BlogON.Infra.EFcore\BlogON.Infra.EFcore.csproj" />
+    <ProjectReference Include="..\BlogON.infra.Query\BlogON.infra.Query.csproj" />
   </ItemGroup>
 
 </Project>

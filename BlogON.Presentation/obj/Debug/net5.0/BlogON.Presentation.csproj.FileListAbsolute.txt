@@ -402,3 +402,8 @@ C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\bin\Debug\net5.0\Microsof
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Article\Index.cshtml.g.cs
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Article\Create.cshtml.g.cs
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Article\Edit.cshtml.g.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\bin\Debug\net5.0\BlogON.infra.Query.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\bin\Debug\net5.0\BlogON.infra.Query.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Pages\Single.cshtml.g.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Pages\Components\Menu\Menu.cshtml.g.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Pages\Archive.cshtml.g.cs

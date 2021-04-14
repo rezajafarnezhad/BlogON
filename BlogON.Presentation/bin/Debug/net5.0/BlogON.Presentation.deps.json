@@ -1536,6 +1536,7 @@
           "BlogON.Application": "1.0.0",
           "BlogON.Domain": "1.0.0",
           "BlogON.Infra.EFcore": "1.0.0",
+          "BlogON.infra.Query": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1"
         },
         "runtime": {
@@ -1556,6 +1557,17 @@
         },
         "compile": {
           "BlogON.Infra.EFcore.dll": {}
+        }
+      },
+      "BlogON.infra.Query/1.0.0": {
+        "dependencies": {
+          "BlogON.Infra.EFcore": "1.0.0"
+        },
+        "runtime": {
+          "BlogON.infra.Query.dll": {}
+        },
+        "compile": {
+          "BlogON.infra.Query.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4022,6 +4034,11 @@
       "sha512": ""
     },
     "BlogON.Infra.EFcore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlogON.infra.Query/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

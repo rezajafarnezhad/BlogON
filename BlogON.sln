@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogON.Infra.EFcore", "Blog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogON.Presentation", "BlogON.Presentation\BlogON.Presentation.csproj", "{22AB92A2-F3A3-4B0F-8A46-E3332172ABB9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogON.infra.Query", "BlogON.infra.Query\BlogON.infra.Query.csproj", "{5C5001BE-0912-45D5-B78B-C81FADE36408}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{22AB92A2-F3A3-4B0F-8A46-E3332172ABB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22AB92A2-F3A3-4B0F-8A46-E3332172ABB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22AB92A2-F3A3-4B0F-8A46-E3332172ABB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5001BE-0912-45D5-B78B-C81FADE36408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5001BE-0912-45D5-B78B-C81FADE36408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5001BE-0912-45D5-B78B-C81FADE36408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5001BE-0912-45D5-B78B-C81FADE36408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

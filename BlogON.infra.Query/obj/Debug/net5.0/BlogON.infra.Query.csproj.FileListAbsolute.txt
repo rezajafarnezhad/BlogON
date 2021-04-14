@@ -1,0 +1,17 @@
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.infra.Query.deps.json
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.infra.Query.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\ref\BlogON.infra.Query.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.infra.Query.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.Domain.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.Infra.EFcore.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.Infra.EFcore.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\BlogON.Domain.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.csprojAssemblyReference.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.AssemblyInfoInputs.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.AssemblyInfo.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.csproj.CoreCompileInputs.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.csproj.CopyComplete
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\ref\BlogON.infra.Query.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.pdb

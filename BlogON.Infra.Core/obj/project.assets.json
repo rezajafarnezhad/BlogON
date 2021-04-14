@@ -1530,6 +1530,19 @@
         "runtime": {
           "bin/placeholder/BlogON.Infra.EFcore.dll": {}
         }
+      },
+      "BlogON.infra.Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BlogON.Infra.EFcore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogON.infra.Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogON.infra.Query.dll": {}
+        }
       }
     }
   },
@@ -5716,6 +5729,11 @@
       "type": "project",
       "path": "../BlogON.Infra.EFcore/BlogON.Infra.EFcore.csproj",
       "msbuildProject": "../BlogON.Infra.EFcore/BlogON.Infra.EFcore.csproj"
+    },
+    "BlogON.infra.Query/1.0.0": {
+      "type": "project",
+      "path": "../BlogON.infra.Query/BlogON.infra.Query.csproj",
+      "msbuildProject": "../BlogON.infra.Query/BlogON.infra.Query.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5723,6 +5741,7 @@
       "BlogON.Application >= 1.0.0",
       "BlogON.Domain >= 1.0.0",
       "BlogON.Infra.EFcore >= 1.0.0",
+      "BlogON.infra.Query >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.1"
     ]
   },
@@ -5771,6 +5790,9 @@
             },
             "C:\\Users\\mReza\\source\\repos\\BlogON\\BlogON.Infra.EFcore\\BlogON.Infra.EFcore.csproj": {
               "projectPath": "C:\\Users\\mReza\\source\\repos\\BlogON\\BlogON.Infra.EFcore\\BlogON.Infra.EFcore.csproj"
+            },
+            "C:\\Users\\mReza\\source\\repos\\BlogON\\BlogON.infra.Query\\BlogON.infra.Query.csproj": {
+              "projectPath": "C:\\Users\\mReza\\source\\repos\\BlogON\\BlogON.infra.Query\\BlogON.infra.Query.csproj"
             }
           }
         }

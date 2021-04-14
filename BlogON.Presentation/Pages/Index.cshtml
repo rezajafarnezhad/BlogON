@@ -1,4 +1,58 @@
 ﻿@page
 @model BlogON.Presentation.Pages.IndexModel
 @{
+    Layout = "_Layout";
 }
+
+<div class="latest-posts">
+    <div class="container-fluid">
+        <div class="blog-title-span">
+            <span class="title">اخبار و مقالات</span>
+        </div>
+
+        @foreach (var item in Model.articleQueryViews)
+        {
+            <div class="col-md-3">
+                <div class="post-box">
+                    <a asp-page="/Single" asp-route-id="@item.Id">
+                        <figure>
+                            <img src="@item.Image" alt="@item.Title">
+                            <figcaption class="meta-fig">
+                                <span><i class="fa fa-clock-o"></i> @item.CreationDate</span>&nbsp;
+                                <span><i class="fa fa-comment-o"></i> 12</span>
+                            </figcaption>
+                            <figcaption class="view">
+                                <span>@item.Category</span>
+                               
+                            </figcaption>
+                        </figure>
+                        <div class="text-p">
+                            <h5>@item.Title</h5>
+                            <p>
+                                
+                              @item.ShortDescription
+                            </p>
+                            <div class="text-rigt">
+                                <a asp-page="/Single" asp-route-id="@item.Id">ادامه ...</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        }
+
+
+
+        @*<div class="col-md-12 text-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+                </ul>
+            </nav>
+        </div>*@
+    </div>
+</div>

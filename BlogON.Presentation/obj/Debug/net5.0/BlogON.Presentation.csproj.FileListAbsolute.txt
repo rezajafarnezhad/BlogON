@@ -407,3 +407,5 @@ C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\bin\Debug\net5.0\BlogON.i
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Pages\Single.cshtml.g.cs
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Pages\Components\Menu\Menu.cshtml.g.cs
 C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Pages\Archive.cshtml.g.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\CommentManagement\Index.cshtml.g.cs
+C:\Users\mReza\source\repos\BlogON\BlogON.Presentation\obj\Debug\net5.0\Razor\Areas\Admin\Pages\CommentManagement\Detail.cshtml.g.cs

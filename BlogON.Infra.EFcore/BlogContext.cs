@@ -1,5 +1,6 @@
 ﻿using BlogON.Domain.Entities.Article;
 using BlogON.Domain.Entities.ArticleCategory;
+using BlogON.Domain.Entities.Comment;
 using BlogON.Infra.EFcore.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -19,15 +20,17 @@ namespace BlogON.Infra.EFcore
 
         public DbSet<ArticleCategory> ArticleCategories { get; set; }
         public DbSet<Article> Articles { get; set; }
+        public DbSet<Comment> Comments  { get; set; }
 
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.ApplyConfiguration(new ArticleCaregoryMapping());
-            modelBuilder.ApplyConfiguration(new ArticleMapping());
+            var assembly = typeof(ArticleMapping).Assembly;
+            modelBuilder.ApplyConfigurationsFromAssembly(assembly);
 
+            
             base.OnModelCreating(modelBuilder);
         }
 

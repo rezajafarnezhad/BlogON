@@ -3,8 +3,10 @@
 using BlogON.Application;
 using BlogON.Application.Contracts.Article;
 using BlogON.Application.Contracts.ArticleCategory;
+using BlogON.Application.Contracts.Comment;
 using BlogON.Domain.Entities.Article;
 using BlogON.Domain.Entities.ArticleCategory;
+using BlogON.Domain.Entities.Comment;
 using BlogON.infra.Query;
 using BlogON.Infra.EFcore;
 using BlogON.Infra.EFcore.Repository;
@@ -45,6 +47,13 @@ namespace BlogON.Infra.Core
 
             services.AddTransient<IArticleQuery, ArticleQuery>();
             services.AddTransient<IArticleCategoryQueryView, ArticleCategoryQueryView>();
+
+            #endregion
+
+            #region Comment
+
+            services.AddTransient<ICommentRepo, CommentRepo>();
+            services.AddTransient<ICommentApplication, CommentApplication>();
 
             #endregion
 

@@ -29,19 +29,24 @@
                 @Html.Raw(Model.articleQueryView.Content)
 
             </div>
+
+
+
+
             <div class="comments_form">
                 <h5>دیدگاه شما </h5>
-                <form>
+                <form method="post">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="نام شما">
+                            <input type="text" name="Name" id="Name" class="form-control" placeholder="نام شما">
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="ایمیل">
+                            <input type="email" name="Email" id="Email" class="form-control" placeholder="ایمیل">
                         </div>
                         <div class="col-md-12">
-                            <textarea class="form-control" placeholder="نظر شما ..."></textarea>
+                            <textarea class="form-control" name="Message" id="Message" placeholder="نظر شما ..."></textarea>
                         </div>
+                        <input type="hidden" name="ArticleId" value="@Model.articleQueryView.Id" />
                         <div class="col-md-12">
                             <div class="text-left">
                                 <button class="btn btn-primary">ثبت نظر</button>
@@ -50,6 +55,60 @@
                     </div>
                 </form>
             </div>
+
+
+         
+            <div class="comments_form">
+                <div class="entry-comments">
+                    <div class="title-wrap title-wrap--line">
+                        <h3 class="section-title">۳ دیدگاه</h3>
+                    </div>
+                    <ul class="comment-list">
+                        <li class="comment">
+                            <div class="comment-body">
+                                <div class="comment-avatar">
+                                    <img alt="" src="/SiteTempelet/img/Comment.png">
+                                </div>
+                                <div class="comment-text">
+                                    <h6 class="comment-author">بهرامی راد</h6>
+                                    <div class="comment-metadata">
+                                        <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
+                                    </div>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                    <a href="#" class="comment-reply">پاسخ</a>
+                                </div>
+                            </div>
+
+                            <ul class="children">
+                                <li class="comment">
+                                    <div class="comment-body">
+                                        <div class="comment-avatar">
+                                            <img alt="" src="/SiteTempelet/img/Comment.png">
+                                        </div>
+                                        <div class="comment-text">
+                                            <h6 class="comment-author">حامد</h6>
+                                            <div class="comment-metadata">
+                                                <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
+                                            </div>
+                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            <a href="#" class="comment-reply">پاسخ</a>
+                                        </div>
+                                    </div>
+                                </li> <!-- end reply comment -->
+                            </ul>
+
+                        </li> <!-- end 1-2 comment -->
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
         </div>
     </div>
 </div>

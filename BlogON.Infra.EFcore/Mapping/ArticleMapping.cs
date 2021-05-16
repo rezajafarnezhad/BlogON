@@ -22,6 +22,8 @@ namespace BlogON.Infra.EFcore.Mapping
             builder.Property(c=>c.IsDelete).IsRequired();
 
             builder.HasOne(c => c.ArticleCategory).WithMany(c => c.Articles).HasForeignKey(c => c.ArticleCategoryId);
+            builder.HasMany(c => c.Comments).WithOne(c => c.Article).HasForeignKey(c=>c.ArticleId);
+
 
         }
     }

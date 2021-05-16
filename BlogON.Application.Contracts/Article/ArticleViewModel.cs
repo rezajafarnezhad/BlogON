@@ -9,10 +9,10 @@ namespace BlogON.Application.Contracts.Article
     public class ArticleViewModel
     {
 
-     public int Id { get;  set; }
-        public string Title { get;  set; }
+        public int Id { get; set; }
+        public string Title { get; set; }
         public string Category { get; set; }
-        public bool IsDelete { get;  set; }
-        public string CreationDate { get;  set; }
+        public bool IsDelete { get; set; }
+        public string CreationDate { get; set; }
     }
 }

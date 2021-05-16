@@ -21,6 +21,8 @@ namespace BlogON.Domain.Entities.Article
         public int ArticleCategoryId { get; set; }
         public ArticleCategory.ArticleCategory ArticleCategory { get; set; }
 
+        public ICollection<Comment.Comment> Comments { get; set; }
+
 
         public Article(string title,string shortDescription, string image, string content, int articleCategoryId)
         {
@@ -31,6 +33,7 @@ namespace BlogON.Domain.Entities.Article
             ArticleCategoryId = articleCategoryId;
             IsDelete = false;
             CreationDate = DateTime.Now;
+            Comments = new List<Comment.Comment>();
         }
         public void Edit(string title, string shortDescription, string image, string content, int articleCategoryId)
         {

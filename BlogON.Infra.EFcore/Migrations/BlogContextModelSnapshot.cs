@@ -80,6 +80,41 @@ namespace BlogON.Infra.EFcore.Migrations
                     b.ToTable("ArticleCategories");
                 });
 
+            modelBuilder.Entity("BlogON.Domain.Entities.Comment.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Message")
+                        .HasMaxLength(800)
+                        .HasColumnType("nvarchar(800)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("dateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ArticleId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("BlogON.Domain.Entities.Article.Article", b =>
                 {
                     b.HasOne("BlogON.Domain.Entities.ArticleCategory.ArticleCategory", "ArticleCategory")
@@ -89,6 +124,22 @@ namespace BlogON.Infra.EFcore.Migrations
                         .IsRequired();
 
                     b.Navigation("ArticleCategory");
+                });
+
+            modelBuilder.Entity("BlogON.Domain.Entities.Comment.Comment", b =>
+                {
+                    b.HasOne("BlogON.Domain.Entities.Article.Article", "Article")
+                        .WithMany("Comments")
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+                });
+
+            modelBuilder.Entity("BlogON.Domain.Entities.Article.Article", b =>
+                {
+                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("BlogON.Domain.Entities.ArticleCategory.ArticleCategory", b =>

@@ -18,7 +18,7 @@
                 <div class="col-md-2"></div>
             </div>
             <div class="posts_meta text-center">
-                <span><i class="fa fa-comment-o"></i> 25 نظر</span>
+                <span><i class="fa fa-comment-o"></i> (@Model.articleQueryView.CommentsCount) نظر</span>
                 <span><i class="fa fa-archive"></i>@Model.articleQueryView.Category</span>
                 <span><i class="fa fa-calendar"></i> @Model.articleQueryView.CreationDate.ToString()</span>
             </div>
@@ -57,20 +57,43 @@
             </div>
 
 
-         
+
             <div class="comments_form">
                 <div class="entry-comments">
                     <div class="title-wrap title-wrap--line">
-                        <h3 class="section-title">۳ دیدگاه</h3>
+                        <h3 class="section-title">(@Model.articleQueryView.CommentsCount) دیدگاه</h3>
                     </div>
                     <ul class="comment-list">
+
+                        @foreach (var item in Model.articleQueryView.Comments)
+                        {
+                            <li class="comment">
+                                <div class="comment-body">
+                                    <div class="comment-avatar">
+                                        <img alt="" src="/SiteTempelet/img/Comment.png">
+                                    </div>
+                                    <div class="comment-text">
+                                        <h6 class="comment-author">@item.Name</h6>
+                                        <div class="comment-metadata">
+                                            <a href="#" class="comment-date">@item.CreationDate</a>
+                                        </div>
+                                        <p>
+                                            @item.Comment
+                                        </p>
+
+                                      
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                        <!--<ul class="children">
                         <li class="comment">
                             <div class="comment-body">
                                 <div class="comment-avatar">
                                     <img alt="" src="/SiteTempelet/img/Comment.png">
                                 </div>
                                 <div class="comment-text">
-                                    <h6 class="comment-author">بهرامی راد</h6>
+                                    <h6 class="comment-author">حامد</h6>
                                     <div class="comment-metadata">
                                         <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
                                     </div>
@@ -78,26 +101,10 @@
                                     <a href="#" class="comment-reply">پاسخ</a>
                                 </div>
                             </div>
-
-                            <ul class="children">
-                                <li class="comment">
-                                    <div class="comment-body">
-                                        <div class="comment-avatar">
-                                            <img alt="" src="/SiteTempelet/img/Comment.png">
-                                        </div>
-                                        <div class="comment-text">
-                                            <h6 class="comment-author">حامد</h6>
-                                            <div class="comment-metadata">
-                                                <a href="#" class="comment-date">۴ اردیبهشت ۱۳۹۸</a>
-                                            </div>
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
-                                            <a href="#" class="comment-reply">پاسخ</a>
-                                        </div>
-                                    </div>
-                                </li> <!-- end reply comment -->
-                            </ul>
-
-                        </li> <!-- end 1-2 comment -->
+                        </li>-->
+                        <!-- end reply comment -->
+                        <!--</ul>-->
+                        <!-- end 1-2 comment -->
 
 
 

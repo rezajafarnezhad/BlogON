@@ -20,7 +20,6 @@
                             <img src="@item.Image" alt="@item.Title">
                             <figcaption class="meta-fig">
                                 <span><i class="fa fa-clock-o"></i> @item.CreationDate</span>&nbsp;
-                                <span><i class="fa fa-comment-o"></i> 12</span>
                             </figcaption>
                             <figcaption class="view">
                                 <span>@item.Category</span>
@@ -35,6 +34,10 @@
                             </p>
                             <div class="text-rigt">
                                 <a asp-page="/Single" asp-route-id="@item.Id">ادامه ...</a>
+                            </div>
+                            <div class="text-left">
+                                <span><i class="fa fa-comment-o"></i> @item.CommentsCount</span>
+
                             </div>
                         </div>
                     </a>

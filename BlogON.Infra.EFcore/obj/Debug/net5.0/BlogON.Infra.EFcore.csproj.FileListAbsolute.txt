@@ -16,3 +16,5 @@ C:\Users\mReza\source\repos\BlogON\BlogON.Infra.EFcore\obj\Debug\net5.0\BlogON.I
 C:\Users\mReza\source\repos\BlogON\BlogON.Infra.EFcore\obj\Debug\net5.0\ref\BlogON.Infra.EFcore.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Infra.EFcore\obj\Debug\net5.0\BlogON.Infra.EFcore.pdb
 C:\Users\mReza\source\repos\BlogON\BlogON.Infra.EFcore\obj\Debug\net5.0\BlogON.Infra.EFcore.genruntimeconfig.cache
+C:\Users\mReza\source\repos\BlogON\BlogON.Infra.EFcore\bin\Debug\net5.0\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Infra.EFcore\bin\Debug\net5.0\01_FrameWork.pdb

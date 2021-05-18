@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _01_FrameWork.Domain;
 using BlogON.Domain.Entities.ArticleCategory;
 
 namespace BlogON.Domain.Entities.Article
 {
-    public class Article
+    public class Article : DomainBase<int>
     {
-        public int Id { get; private set; }
+        
         public string Title { get; private set; }
         public string ShortDescription { get; private set; }
         public string Image { get; private set; }
         public string Content { get; private set; }
         public bool IsDelete { get; private set; }
-        public DateTime CreationDate { get; private set; }
+      
 
 
         public int ArticleCategoryId { get; set; }
@@ -24,7 +25,7 @@ namespace BlogON.Domain.Entities.Article
         public ICollection<Comment.Comment> Comments { get; set; }
 
 
-        public Article(string title,string shortDescription, string image, string content, int articleCategoryId)
+        public Article(string title, string shortDescription, string image, string content, int articleCategoryId)
         {
             Title = title;
             ShortDescription = shortDescription;
@@ -32,7 +33,7 @@ namespace BlogON.Domain.Entities.Article
             Content = content;
             ArticleCategoryId = articleCategoryId;
             IsDelete = false;
-            CreationDate = DateTime.Now;
+           
             Comments = new List<Comment.Comment>();
         }
         public void Edit(string title, string shortDescription, string image, string content, int articleCategoryId)
@@ -42,7 +43,7 @@ namespace BlogON.Domain.Entities.Article
             Image = image;
             Content = content;
             ArticleCategoryId = articleCategoryId;
-           
+
         }
 
         public void Remove()
@@ -53,7 +54,7 @@ namespace BlogON.Domain.Entities.Article
         {
             IsDelete = false;
         }
-             
+
         public Article()
         {
 

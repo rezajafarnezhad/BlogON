@@ -29,7 +29,7 @@ namespace BlogON.infra.Query
                 .Where(c => c.ArticleCategoryId == categoryid).Select(c => new ArticleQueryView()
                 {
                     Id = c.Id,
-                    CreationDate=c.CreationDate.ToString(),
+                    CreationDate=c.dateTime.ToString(),
                     ShortDescription =c.ShortDescription,
                     Category = c.ArticleCategory.Title,
                     Image=c.Image,

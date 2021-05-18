@@ -11,7 +11,7 @@ namespace BlogON.Infra.EFcore.Mapping
             builder.ToTable("ArticleCategories");
             builder.HasKey(c => c.Id);
             builder.Property(c => c.Title);
-            builder.Property(c => c.CreationDate);
+            builder.Property(c => c.dateTime);
             builder.Property(c => c.IsDeleted);
             builder.HasMany(c => c.Articles).WithOne(c => c.ArticleCategory).HasForeignKey(c => c.ArticleCategoryId);
 

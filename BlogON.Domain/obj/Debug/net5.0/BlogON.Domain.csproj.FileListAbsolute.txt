@@ -10,3 +10,6 @@ C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.
 C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\ref\BlogON.Domain.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\bin\Debug\net5.0\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\bin\Debug\net5.0\01_FrameWork.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.Domain\obj\Debug\net5.0\BlogON.Domain.csproj.CopyComplete

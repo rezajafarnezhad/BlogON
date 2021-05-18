@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _01_FrameWork.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace BlogON.Domain.Entities.Comment
 {
-    public class Comment
+    public class Comment:DomainBase<int>
     {
 
-        public int Id { get; private set; }
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string Message { get; private set; }
-        public DateTime dateTime { get; private set; }
         public int Status { get; private set; } //new =0  , Confirmed =1 , cancle=2
 
 
@@ -26,7 +25,6 @@ namespace BlogON.Domain.Entities.Comment
             Email = email;
             Message = message;
             ArticleId = articleId;
-            dateTime = DateTime.Now;
             Status = Statuses.New;
         }
         protected Comment()

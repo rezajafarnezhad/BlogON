@@ -1,0 +1,12 @@
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\bin\Debug\net5.0\01_FrameWork.deps.json
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\bin\Debug\net5.0\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\bin\Debug\net5.0\ref\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\bin\Debug\net5.0\01_FrameWork.pdb
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.csprojAssemblyReference.cache
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.AssemblyInfoInputs.cache
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.AssemblyInfo.cs
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.csproj.CoreCompileInputs.cache
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\ref\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\01_FrameWork\obj\Debug\net5.0\01_FrameWork.pdb

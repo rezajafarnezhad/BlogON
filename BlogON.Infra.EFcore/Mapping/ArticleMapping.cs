@@ -18,7 +18,7 @@ namespace BlogON.Infra.EFcore.Mapping
             builder.Property(c=>c.ShortDescription).HasMaxLength(600).IsRequired();
             builder.Property(c=>c.Title).HasMaxLength(170).IsRequired();
             builder.Property(c=>c.Content).IsRequired();
-            builder.Property(c=>c.CreationDate).IsRequired();
+            builder.Property(c=>c.dateTime).IsRequired();
             builder.Property(c=>c.IsDelete).IsRequired();
 
             builder.HasOne(c => c.ArticleCategory).WithMany(c => c.Articles).HasForeignKey(c => c.ArticleCategoryId);

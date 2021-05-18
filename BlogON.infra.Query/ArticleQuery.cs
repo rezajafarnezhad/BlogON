@@ -22,7 +22,7 @@ namespace BlogON.infra.Query
             return _context.Articles.Include(c=>c.ArticleCategory).Include(c=>c.Comments).Select(c=> new ArticleQueryView()
             {
                 Id = c.Id,
-                CreationDate=c.CreationDate.ToString(),
+                CreationDate=c.dateTime.ToString(),
                 ShortDescription = c.ShortDescription,
                 Category=c.ArticleCategory.Title,
                 Image=c.Image,
@@ -59,7 +59,7 @@ namespace BlogON.infra.Query
                 Title = c.Title,
                 ShortDescription=c.ShortDescription,
                 Category=c.ArticleCategory.Title,
-                CreationDate=c.CreationDate.ToString(),
+                CreationDate=c.dateTime.ToString(),
                 Image=c.Image,
                 CommentsCount = c.Comments.Count(c=>c.Status == Statuses.Confirmed),
                 

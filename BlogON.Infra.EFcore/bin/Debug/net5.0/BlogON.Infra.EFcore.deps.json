@@ -1069,7 +1069,15 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "01_FrameWork/1.0.0": {
+        "runtime": {
+          "01_FrameWork.dll": {}
+        }
+      },
       "BlogON.Domain/1.0.0": {
+        "dependencies": {
+          "01_FrameWork": "1.0.0"
+        },
         "runtime": {
           "BlogON.Domain.dll": {}
         }
@@ -1760,6 +1768,11 @@
       "sha512": "sha512-kwo6Kf+0jjEcmB+S2BI5SL0xHHRIBd0Cjf11BGliuZ3Va9V1hDbKZmq0mb7HO8QPlYYrq8eNToOzipfw6ARKEw==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "01_FrameWork/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "BlogON.Domain/1.0.0": {
       "type": "project",

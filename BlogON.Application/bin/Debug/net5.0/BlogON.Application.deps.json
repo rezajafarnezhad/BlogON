@@ -15,12 +15,20 @@
           "BlogON.Application.dll": {}
         }
       },
+      "01_FrameWork/1.0.0": {
+        "runtime": {
+          "01_FrameWork.dll": {}
+        }
+      },
       "BlogON.Application.Contracts/1.0.0": {
         "runtime": {
           "BlogON.Application.Contracts.dll": {}
         }
       },
       "BlogON.Domain/1.0.0": {
+        "dependencies": {
+          "01_FrameWork": "1.0.0"
+        },
         "runtime": {
           "BlogON.Domain.dll": {}
         }
@@ -29,6 +37,11 @@
   },
   "libraries": {
     "BlogON.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "01_FrameWork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

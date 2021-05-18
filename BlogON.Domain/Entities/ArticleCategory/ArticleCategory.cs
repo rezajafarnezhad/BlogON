@@ -1,15 +1,14 @@
 ﻿
+using _01_FrameWork.Domain;
 using System;
 using System.Collections.Generic;
 
 namespace BlogON.Domain.Entities.ArticleCategory
 {
-    public class ArticleCategory
+    public class ArticleCategory:DomainBase<int>
     {
-        public int Id { get; private set; }
         public string Title { get; private set; }
         public bool IsDeleted { get; private set; }
-        public DateTime CreationDate { get; private set; }
 
 
         public ICollection<Article.Article> Articles { get; set; }
@@ -28,7 +27,6 @@ namespace BlogON.Domain.Entities.ArticleCategory
            
             Title = title;
             IsDeleted = false;
-            CreationDate = DateTime.Now;
             Articles = new List<Article.Article>();
                 
         }

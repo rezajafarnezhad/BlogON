@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "BlogON.Domain/1.0.0": {
+        "dependencies": {
+          "01_FrameWork": "1.0.0"
+        },
         "runtime": {
           "BlogON.Domain.dll": {}
+        }
+      },
+      "01_FrameWork/1.0.0": {
+        "runtime": {
+          "01_FrameWork.dll": {}
         }
       }
     }
   },
   "libraries": {
     "BlogON.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "01_FrameWork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

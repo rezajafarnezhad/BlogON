@@ -8,4 +8,8 @@
     <Folder Include="Entities\ArticleCategory\Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\01_FrameWork\01_FrameWork.csproj" />
+  </ItemGroup>
+
 </Project>

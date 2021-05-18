@@ -53,7 +53,7 @@ namespace BlogON.Application
                     Title = item.Title,
                     Category = item.ArticleCategory.Title,
                     IsDelete = item.IsDelete,
-                    CreationDate = item.CreationDate.ToString()
+                    CreationDate = item.dateTime.ToString()
 
                 });
 

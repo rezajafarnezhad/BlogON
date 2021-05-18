@@ -15,3 +15,5 @@ C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.in
 C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\ref\BlogON.infra.Query.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\obj\Debug\net5.0\BlogON.infra.Query.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.infra.Query\bin\Debug\net5.0\01_FrameWork.pdb

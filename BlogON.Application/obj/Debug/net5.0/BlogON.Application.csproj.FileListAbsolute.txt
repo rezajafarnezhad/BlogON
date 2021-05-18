@@ -15,3 +15,5 @@ C:\Users\mReza\source\repos\BlogON\BlogON.Application\obj\Debug\net5.0\BlogON.Ap
 C:\Users\mReza\source\repos\BlogON\BlogON.Application\obj\Debug\net5.0\BlogON.Application.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Application\obj\Debug\net5.0\ref\BlogON.Application.dll
 C:\Users\mReza\source\repos\BlogON\BlogON.Application\obj\Debug\net5.0\BlogON.Application.pdb
+C:\Users\mReza\source\repos\BlogON\BlogON.Application\bin\Debug\net5.0\01_FrameWork.dll
+C:\Users\mReza\source\repos\BlogON\BlogON.Application\bin\Debug\net5.0\01_FrameWork.pdb

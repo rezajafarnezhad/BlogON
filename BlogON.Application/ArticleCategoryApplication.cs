@@ -85,7 +85,7 @@ namespace BlogON.Application
                 result.Add(new ArticleCategoryViewModel()
                 {
                     Id = item.Id,
-                    CreationDate = item.CreationDate.ToString(),
+                    CreationDate = item.dateTime.ToString(),
                     Title = item.Title,
                     IsDeleted = item.IsDeleted
                 });
